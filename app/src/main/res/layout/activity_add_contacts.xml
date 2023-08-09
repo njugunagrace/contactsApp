@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnsave"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddContactsActivity">
+    tools:context=".ui.AddContactsActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilName"
@@ -59,4 +60,14 @@
             android:layout_height="wrap_content"
             android:hint="Phone Number" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="96dp"
+        android:text="save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilNumber" />
 </androidx.constraintlayout.widget.ConstraintLayout>

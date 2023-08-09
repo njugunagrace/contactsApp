@@ -1,16 +1,16 @@
-package com.gracie.contactsapp
+package com.gracie.contactsapp.ui
 
-import android.provider.ContactsContract
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.gracie.contactsapp.Contacts
 import com.gracie.contactsapp.databinding.ContactListBinding
 import com.squareup.picasso.Picasso
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
 
 class ContactsRvAdapter(var contactlist:List<Contacts>):RecyclerView.Adapter<ContactsViewHolder> (){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactsViewHolder {
-        var binding=ContactListBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val binding=ContactListBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return ContactsViewHolder(binding)
 
     }
@@ -21,7 +21,7 @@ class ContactsRvAdapter(var contactlist:List<Contacts>):RecyclerView.Adapter<Con
 
     override fun onBindViewHolder(holder: ContactsViewHolder, position: Int) {
         val contact=contactlist.get(position)
-        var binding=holder.binding
+        val binding=holder.binding
         binding.tvName.text=contact.name
         binding.tvContact.text=contact.contact
         binding.tvEmail.text=contact.email

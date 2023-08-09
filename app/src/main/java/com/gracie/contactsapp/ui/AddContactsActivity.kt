@@ -1,10 +1,9 @@
-package com.gracie.contactsapp
+package com.gracie.contactsapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.material.textfield.TextInputLayout
+import com.gracie.contactsapp.R
 import com.gracie.contactsapp.databinding.ActivityAddContactsBinding
-import com.gracie.contactsapp.databinding.ActivityMainBinding
 
 class AddContactsActivity : AppCompatActivity() {
     lateinit var binding: ActivityAddContactsBinding
@@ -21,6 +20,6 @@ class AddContactsActivity : AppCompatActivity() {
 
 }
 fun bindingViews(){
-    var firstname=
+//    var firstname=
 
 }
